@@ -1,0 +1,53 @@
+~/Documents/_math801f11/math801f11.utf
+_________________________
+2011-09-18 17:42
+
+* SUCCESS!  Downloading the license manager again from mathworks.com put the right "DAEMON MLM.." line in license.dat
+
+* Working on PCA for early plant root growth
+
+_________________________
+2011-09-17 21:30
+
+* struggling with Matlab License Manager.  Needs handholding, manual intervention to run the license manager under Lion:
+
+/Applications/MATLAB_R2010B.app/etc/maci64/lmgrd -c /Users/keith/.matlab/R2010b/license.dat -l /var/tmp/lm_TMW.log
+
+
+keith:_math801f11 keith$ ls -la /Applications/MATLAB_R2010b.app
+total 176
+drwxr-xr-x   24 keith  admin    816 Sep 17 12:39 .
+drwxrwxr-x+ 159 root   admin   5406 Sep 17 09:11 ..
+-r--r--r--    1 keith  admin      7 Jun 28  2010 .VERSION
+drwxr-xr-x    3 keith  admin    102 Sep 17 12:30 Activate.app
+drwxr-xr-x    6 keith  admin    204 Sep 17 12:30 Contents
+drwxr-xr-x    3 keith  admin    102 Sep 17 12:30 Deactivate.app
+drwxr-xr-x    4 keith  admin    136 Sep 17 12:30 X11
+drwxr-xr-x    8 keith  admin    272 Sep 17 12:39 appdata
+drwxr-xr-x   29 keith  admin    986 Sep 17 12:35 bin
+drwxr-xr-x   21 keith  admin    714 Sep 17 21:06 etc
+drwxr-xr-x    5 keith  admin    170 Sep 17 12:30 extern
+drwxr-xr-x   38 keith  admin   1292 Sep 17 12:30 help
+drwxr-xr-x    4 keith  admin    136 Sep 17 12:29 java
+-r--r--r--    1 keith  admin  73937 Jul  6  2010 license.txt
+drwxr-xr-x    7 keith  admin    238 Sep 17 20:29 licenses
+-r--r--r--    1 keith  admin   2419 Jul 20  2010 patents.txt
+drwxr-xr-x   28 keith  admin    952 Sep 17 12:38 resources
+drwxr-xr-x    4 keith  admin    136 Sep 17 12:31 rtw
+drwxr-xr-x    3 keith  admin    102 Sep 17 12:34 runtime
+drwxr-xr-x    4 keith  admin    136 Sep 17 12:31 simulink
+drwxr-xr-x    3 keith  admin    102 Sep 17 12:30 stateflow
+drwxr-xr-x    7 keith  admin    238 Sep 17 12:30 sys
+drwxr-xr-x   34 keith  admin   1156 Sep 17 12:38 toolbox
+-r--r--r--    1 keith  admin    248 Dec 26  2007 trademarks.txt
+
+keith:_math801f11 keith$ ls -la /Applications/MATLAB_R2010b.app/licenses
+total 64
+drwxr-xr-x   7 keith  admin   238 Sep 17 20:29 .
+drwxr-xr-x  24 keith  admin   816 Sep 17 12:39 ..
+-rw-r--r--@  1 keith  admin  6383 Sep 17 20:29 license.dat
+-rw-r--r--@  1 keith  keith  6383 Sep 17 13:57 license.dat.110917
+-rw-r--r--@  1 keith  admin  6101 Sep 17 09:19 license.lic.110917
+-rwxrwxrwx   1 keith  admin   107 Jan 25  2011 license_dyn-128-104-4-251_632951_R2010b.lic.deact
+-rw-r--r--@  1 keith  keith    70 Sep 17 11:45 network.lic.2010
+ls -la license_dyn-128-104-4-251_632951_R2010b.lic.deact
