@@ -1,5 +1,140 @@
 ~/Documents/_math801f11/math801f11.utf
 _________________________
+2011-09-24 18:42
+
+http://www.ces.clemson.edu/~petersj/Agents/MatLabNA/index.html  <== SVD etc. ++
+
+_________________________
+2011-01-21 07:50
+
+http://www.matlabcorner.com/matlab-tutorial-2-matrices-in-matlab/
+
+tutorial 4) Statistics....
+
+http://ocw.mit.edu/courses/mathematics/18-466-mathematical-statistics-spring-2003/  <== ++
+
+
+"RAP" in lecture notes to above
+Author:            Dudley, R. M. (Richard M.)
+Title:             Real analysis and probability / R.M. Dudley.
+Publisher:         Cambridge ; New York : Cambridge University Press, 2002.
+Location:          Wendt Library Book Stacks
+Call Number:       QA300 D83 2002
+_________________________
+2011-09-24 13:13
+
+Arash Sangari''s .m file of sept. 21; working toward PCA for root growth;  copied and pasted from the command history window in matlab:
+
+-----
+%-- 2011-09-24 11:23 --%
+clc
+close all
+clear
+Mu = [2;3];
+Sigma = [2;1];
+Npoint = 100;
+pdx = ProbDistUnivParam('normal',[Mu(1) Sigma(1)]);
+pdy = ProbDistUnivParam('normal',[Mu(2) Sigma(2)]);
+xset = pdx.random(1,Npoint);
+size(xset)
+% xset is a column vector of length 100
+xset(1:20)
+% xset values are random samples of a normal distribution with mean 2 and S.D. of 2.
+hist(xset,10)
+% yset is a column vector in r^100 where x(i) is a random sample from a normal distribution
+% with a mean of 2 and S.D. of 1
+hist(yset,10)
+yset = pdy.random(1,Npoint);
+hist(yset,10)
+yset = pdy.random(1,Npoint);
+hist(yset,10)
+% wrong: yset has mean of 3, S.D. 1
+hist(xset,10)
+-----
+_________________________
+2011-09-23 18:20
+
+Amir Assadi: Notes from  Jernej
+-----
+
+Here are some ideas I came up with. 
+
+We need to find some literature where these things are discussed/described. Wikipedia provides the starting point but more is needed.
+
+Page http://www.recurrence-plot.tk/ seems to be a good source.
+
+Names associated with recurrence plots: Norbert Marwan, Mamen Romano and Marco Thiel
+
+Their paper: N. Marwan, M. C. Romano, M. Thiel, J. Kurths: Recurrence Plots for the Analysis of Complex Systems, Physics Reports, 438(5-6), 237-329. (can be downloaded from http://recurrence-plot.tk/marwan_PhysRep2007.pdf)
+
+A website that has a lot of preprints, some of which are related to the topic:
+http://www.math.uni-bremen.de/zetem/DFG-Schwerpunkt/
+
+Poincare maps, recurrence
+-------------------------
+
+Two distinct terms:
+   1) Poincare map (http://en.wikipedia.org/wiki/Poincar%C3%A9_map)
+       Given a lower-dimensional space R transversal to the trajectory
+       (usually a plane), define a map that maps x to P(x) where P(x) is the
+       point the trajectory ocupies the next time it hits R.
+
+   2) Recurrence plot (http://en.wikipedia.org/wiki/Recurrence_plot)
+       Compare x(t) to x(t') for different values of t and t'. This allows
+       detection of periodicity and substructures.
+
+Some ideas:
+ 1) Make the graphs thicker to allow for variation (Darwin-Poincare
+ recurrence)
+
+ 2) Try to analyze these recurrence plots using various methods.
+  *) with SVD: build a vector base of several different plots, then
+    project others onto the base; the lengths of projections correspond to
+    features
+    *) extract some features as indicated in Recurrence quantification
+    analysis (RQA)
+    (http://en.wikipedia.org/wiki/Recurrence_quantification_analysis)
+    *) some other methods - research needed
+
+ Then train some network to do the classification; afterwards apply this
+ to all the gene expressions (the mRNA traces) for all 7 different
+ conditions. Try to figure out what kind of recurrence plots indicate
+ lagging, suppression, independence, etc.
+
+ 3) With the above classifier, we can change the value of epsilon that
+ defines the thickness (or variation) and check how much the recurrence
+ plot type is stable w.r.t. changing the epsilon -> stability indicates
+ biological importance
+
+ 4) One thing of interest would be the Taken's theorem to reconstruct the
+ phase space. We could analyze stability wrt changing the dimensionality of
+ the phase space.
+
+ 5) Poincare map stuff: create a combined trajectory for several mRNA
+ traces in some higher dimensional space, then consider the recurence as
+ they pass through some plane. Each mRNA curve is in its own dimension, the
+ whole thing then lives on some kind of high-dimensional torus.
+
+ 6) For all of the above we should also consider normalizations, since the
+ mRNA amounts seem to be diminishing with time. Normalize by first
+ computing the envelope (based on maxima)
+
+ 7) How to deal with adaptation: the first 24 hours of measuring is right
+ after the plants have been moved so they are still adapting to the new
+ conditions. We should try to do classification based on the second 24
+ hours.
+_________________________
+2011-09-22 17:34
+
+http://vv811a.math.wisc.edu/joomla/index.php/component/content/article/83  <== Persepolis
+
+Mona Jalal <mona66jalal@gmail.com>, Mohammad Khabbazian <mhkhabbazian@gmail.com>
+
+Flash:  http://www.webconstruction.ch/download  <== Joomla plugin: SWF Content Pro (non-commercial)
+  http://www.webconstruction.ch/images/downloads/swfcontent-pro_3.3.4.zip  <== current release
+  
+
+_________________________
 2011-09-20 17:38
 
 * Linear algebra using Matlab
@@ -15,6 +150,9 @@ http://www.math.ucdavis.edu/~daddel/linear_algebra_appl/OTHER_PAGES/other_pages.
    
 http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/  <== MIT OCW course w Strang
    free chapters of Strang book online: http://math.mit.edu/linearalgebra/
+   Introduction to Linear Algebra, 4th Edition
+   
+http://archives.math.utk.edu/topics/linearAlgebra.html
    
 http://en.wikipedia.org/wiki/Table_of_mathematical_symbols
 _________________________
