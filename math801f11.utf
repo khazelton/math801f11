@@ -1,6 +1,402 @@
 h4. math;bio ~/Documents/_math801f11/math801f11.utf
 
-^h[1-6]\.   <== find all confluence notation header lines (with grep on in bbedit search)
+^h[1-6]\.   <== find all confluence notation header lines (with grep flag on in bbedit search)
+_________________________
+2011-09-24 22:19
+
+* Complete log of matlab commands since installation 5 days ago! Includes attempts at PCA in last two days
+  - see h4. pca;matlab;
+
+-----
+%-- 2011-09-20 12:25 --%
+%-- 2011-09-20 12:35 --%
+%-- 2011-09-20 13:36 --%
+%-- 2011-09-20 17:26 --%
+%-- 2011-09-20 17:33 --%
+%-- 2011-09-21 12:10 --%
+imshow(g30x2D0)
+G30 = g30xD0;
+g30 = g30xD0
+dim (g30xD0)
+dim (g30x2D0)
+dim (G1)
+dim(ans)
+size(G1)
+size(g30x2D0)
+G30 = g30x2D0
+size(G30)
+G30(1:10;1:10;1:3)
+G30(1,1,1)
+G30(1,1,1:3)
+G30(1:10,1:10,1:3)
+xyRange = 600:610
+G30(xyRange,xyRange,1:3)
+wh = size(G30)
+(w h d) = size(G30)
+w,h,d = size(G30)
+[w,h,d]=size(G30)
+ImG3=G30(:,:,2)
+size (ImG30)
+size (ImG3)
+w,h
+imshow(ImG3)
+imshow(G3a)
+size(G3a)
+G3b=G3a(:,:,2)
+size(G3b)
+[w,h]=size(G3b)
+imshow(1:200,:)
+imshow(G3b(1:200,:))
+[h,w]=size(G3b)
+mean(G3b)
+mean(G3b,2)
+size (mean(G3b,2))
+mean(G3b,1)
+size(mean(G3b,1))
+m=(1:4)
+repmat(m,1,3)
+repmat(m,2,3)
+mean(mean(G3b,2))
+G3c=G3b-mean(mean(G3b,2))
+size(Gc3)
+size(G3c)
+imshow(G3c)
+imshow(G3b)
+imshow(G3)
+imshow(G3c)
+# G3c is the 565 x 460 matrix of deviations from the average over the whole matrix
+"# G3c is the 565 x 460 matrix of deviations from the average over the whole matrix"
+'a text string'
+size(G3c)
+covariance = 1 / (N-1)*G3c*G3c;
+covariance = 1 / (w-1)*G3c*G3c;
+covariance = 1 / (w-1)*G3c*G3c';
+covariance = 1 / (w-1)*G3c.*G3c';
+size(G3c)
+size(G3c')
+repmat(1:100,3,4)
+repmat(1:5,3,4)
+repmat(1:5,3)
+repmat(1:2,3)
+a=repmat(1:2,3)
+b=a'
+a.*b
+a*b
+G3c*G3c';
+G3d=single(G3c)
+whos(G3d)
+size(G3d)
+covariance = 1 / (w-1)*G3d*G3d';
+size(covariance)
+[PC,V] = eig(covariance)
+size (PC)
+size (V)
+covariance(1:10,1:10)
+G3c(1:10,1:10)
+w
+h
+covariance = 1/(h-1)*G3d*G3d
+size (G3d)
+h
+covariance = 1/(h-1)*G3c*G3c'
+covariance = 1/(h-1)*G3d*G3d'
+size  (covariance)
+[V, D]=eig(covariance);
+size (V)
+size (D)
+Vd=diag(V)
+size(Vd)
+[junk,rindices]=sort(-1*Vd)
+[junk,rindices]=sort(-1*Vd);
+size(junk)
+size(rindices)
+G3fa=G3f(:,:,2)
+size(G3fa)
+imshow(G3fa)
+G3fb=mean(mean(G3,2));
+size(G3fb)
+G3fb
+G3fc=G3fa-G3fb;
+size (G3fc)
+G3fc
+G3fa(1:10,1:10)
+G3fb=single(G3fa)
+size(G3fb)
+samp=(1:10,1:10)
+samp=(1:10;1:10)
+samp=[1:10;1:10]
+G3b(samp)
+samp=1:10
+G3b(samp,samp)
+G3c=G3b-mean(mean(G3b,2))
+size (G3c)
+g3fb
+G3fb
+G3fc=G3fb-mean(mean(G3fb,2))
+imshow((G3fc+30)*5
+imshow((G3fc+30)*5)
+mean(G3fc,1)
+mean(G3fc,2)
+boolMat=G3fc>6.0
+boolMat=G3fc>10.
+imshow(G3fc>10)
+boolG3=G3fc>13
+imshow(boolG3)
+G3fc
+size (G3fc)
+covariance = 1/(h-1) * G3fc * G3fc'
+size(covariance
+size(covariance)
+covariance = 1/(w-1) * G3fc * G3fc'
+size(covariance)
+[PC, V]=eig(covariance);
+size (PC)
+size (V)
+Vd=diagonal(V)
+Vd=diag(V)
+size(Vd)
+eigshow(G3fc)
+eigsvdgui(G3fc)
+C=PC*V*PC'
+imshow(C)
+G3fc=mean(G3fb,2)
+size(mean(G3fb,2))
+'these are means of columns, normalize column values to make mean = 0'
+'nope, there are 23 columns'
+size(mean(G3fb,1))
+mean(G3fb,1)
+cMean=repmat(mean(G3fb,1),28,1)
+aize(cMean)
+size(cMean)
+nrmG3=G3fb-cmean
+nrmG3=G3fb-cMean
+size(nrmG3)
+covariance = 1/(w-1) * nrmG3 * nrmG3';
+size (covariance)
+[V,D]=eig(nrmG3*nrmG3')
+size(v)
+size(V)
+size(D)
+diag(D)
+D[28,28]
+D(28,28)
+D(27,27)
+D(26,26)
+D(25,25)
+D
+V(28,28)
+V
+max(D)
+max(V)
+
+-----
+h4. pca;matlab;
+clc
+close all
+clear
+Mu = [2;3];
+Sigma = [2;1];
+Npoint = 100;
+pdx = ProbDistUnivParam('normal',[Mu(1) Sigma(1)]);
+pdy = ProbDistUnivParam('normal',[Mu(2) Sigma(2)]);
+xset = pdx.random(1,Npoint);
+yset = pdy.random(1,Npoint);
+setA = [xset;yset];
+save setA setA
+figure;scatter(setA(1,:),setA(2,:),'blue')
+xlabel('X');ylabel('Y');
+grid on
+hold on
+xset = pdx.random(1,Npoint);
+yset = pdy.random(1,Npoint);
+setB = [xset;yset];
+save setB setB
+scatter(setB(1,:),setB(2,:),'red')
+xlabel('X');ylabel('Y');
+grid on
+legend('Set A','Set B');
+title('Scatter plot of setA and setB data points');
+axis equal
+%-- 2011-09-22 21:43 --%
+clc
+close all
+clear
+Mu = [2;3];
+Sigma = [2;1];
+Npoint = 100;
+pdx = ProbDistUnivParam('normal',[Mu(1) Sigma(1)]);
+pdy = ProbDistUnivParam('normal',[Mu(2) Sigma(2)]);
+xset = pdx.random(1,Npoint);
+yset = pdy.random(1,Npoint);
+setA = [xset;yset];
+save setA setA
+figure;scatter(setA(1,:),setA(2,:),'blue')
+xlabel('X');ylabel('Y');
+grid on
+hold on
+xset = pdx.random(1,Npoint);
+yset = pdy.random(1,Npoint);
+setB = [xset;yset];
+save setB setB
+scatter(setB(1,:),setB(2,:),'red')
+xlabel('X');ylabel('Y');
+grid on
+legend('Set A','Set B');
+title('Scatter plot of setA and setB data points');
+axis equal
+ones(1,size(A,2))
+A = setA;
+ones(1,size(A,2))
+size(ones(1,size(A,2)))
+%-- 2011-09-24 11:23 --%
+clc
+close all
+clear
+Mu = [2;3];
+Sigma = [2;1];
+Npoint = 100;
+pdx = ProbDistUnivParam('normal',[Mu(1) Sigma(1)]);
+pdy = ProbDistUnivParam('normal',[Mu(2) Sigma(2)]);
+xset = pdx.random(1,Npoint);
+size(xset)
+% xset is a column vector of length 100
+xset(1:20)
+% xset values are random samples of a normal distribution with mean 2 and S.D. of 2.
+hist(xset,10)
+% yset is a column vector in r^100 where x(i) is a random sample from a normal distribution
+% with a mean of 2 and S.D. of 1
+hist(yset,10)
+yset = pdy.random(1,Npoint);
+hist(yset,10)
+yset = pdy.random(1,Npoint);
+hist(yset,10)
+% wrong: yset has mean of 3, S.D. 1
+hist(xset,10)
+setA = [xset;yset];
+save setA setA
+figure;scatter(setA(1,:),setA(2,:),'blue')
+xlabel('X');ylabel('Y');
+grid on
+hold on
+xset = pdx.random(1,Npoint);
+yset = pdy.random(1,Npoint);
+setB = [xset;yset];
+save setB setB
+scatter(setB(1,:),setB(2,:),'red')
+xlabel('X');ylabel('Y');
+grid on
+legend('Set A','Set B');
+title('Scatter plot of setA and setB data points');
+axis equal
+ver
+A = setA;
+M1 = mean(A,2);
+MM = M1*ones(1,size(A,2));
+size(A)
+A(;,1:8)
+A(:,1:8)
+xset(1:8)
+size(xset)
+A(1,1:8)
+A(2,1:8)
+figure;scatter(setA(1,:),setA(2,:),'blue')
+xlabel('X');ylabel('Y');
+grid on
+hold on
+scatter(setB(1,:),setB(2,:),'red')
+xlabel('X');ylabel('Y');
+grid on
+legend('Set A','Set B');
+title('Scatter plot of setA and setB data points');
+axis equal
+% A is a 2 x 100 matrix; row 1 holds the 100 random x values of mean 2, sd 2
+%                        row 2 holds the 100 random y values of mean 3, sd 1
+% x has greater variance
+
+% SVD computation on set A:
+
+A = setA;
+size(A)
+M1=mean(A,2);
+size(M1)
+M1
+%M1 is a two row column vector of M1(1) is the mean of the x's (row 1 of A)
+%                                 M1(2) is the mean of the y's (row 2 of A)
+xset = pdx.random(1,Npoint);
+size(xset)
+yset = pdy.random(1,Npoint);
+setA = [xset;yset];
+save setA setA
+figure;scatter(setA(1,:),setA(2,:),'blue')
+xlabel('X');ylabel('Y');
+grid on
+hold on
+xset = pdx.random(1,Npoint);
+yset = pdy.random(1,Npoint);
+setB = [xset;yset];
+save setB setB
+scatter(setB(1,:),setB(2,:),'red')
+xlabel('X');ylabel('Y');
+grid on
+legend('Set A','Set B');
+title('Scatter plot of setA and setB data points');
+axis equal
+
+%% SVD computation on setA
+
+A = setA;
+M1 = mean(A,2);
+M1 = mean(A,2)
+size(A,2)
+MM=ones(1,size(A,2))
+size(MM)
+% MM is a row vector of dim 100 of all ones
+size(M1)
+size(MM)
+% M1 is a column vector of dim 2
+M1*MM
+size (MM*M1)
+size (M1*MM)
+MM = M1*MM
+% so we're going to subtract the mean of x from all the x values in row one
+%               and subtract the mean of y from all the y values in row two
+size(A)
+size(M1)
+size(MM)
+Azm = A - MM
+Size (Azm)
+Azm
+size(Azm)
+figure;scatter(Azm(1,:),Azm(2,:),'blue')
+% Azm is the x,y pairs where both x ^ y values have a mean of 0
+% Here comes the magic
+K = Azm*Azm'
+size(K)
+[V1,D1]=eig(K)
+figure;scatter(Azm(1,:),Azm(2,:),'blue')
+V = diag(D1)
+sort(-1*V)
+[junk,rindices]=sort(-1*V)
+V = V(rindices);
+V
+size(V);
+size(V)
+V1 = V1(:,rindices)
+size(V1)
+size(A)
+signals = V1' * A
+figure;scatter(signals(1,:),signals(2,:),'blue')
+% not right
+size(V1)
+size(D1)
+% [V,D] = eig(A) produces matrices of eigenvalues (D) and eigenvectors (V) of matrix A,
+%                so that A*V = V*D
+% [V1,D1]=eig(K) above
+K*V1
+V1*D1
+(V1*D1)'
+% Doesn''t look right...hmmmm
+-----
 _________________________
 2011-09-24 18:42
 
@@ -37,6 +433,8 @@ hist(xset,10)
 
 h4. matlab; ~/_math801f11/shlensPcaTut.m
 
+code from Jon Shlens PCA Tutorial (see h4. ref;)
+
 % -----
 function [signals,PC,V] = pca1(data)
 
@@ -72,7 +470,7 @@ PC = PC(:,rindices);
 signals = PC’ * data;
 
 % -----
-function [signals,PC,V] = pca2(data
+function [signals,PC,V] = pca2(data)
 
 % PCA2: Perform PCA using SVD.
 % data - MxN matrix of input data
