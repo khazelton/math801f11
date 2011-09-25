@@ -1,4 +1,6 @@
-~/Documents/_math801f11/math801f11.utf  #;math;bio;
+h4. math;bio ~/Documents/_math801f11/math801f11.utf
+
+^h[1-6]\.   <== find all confluence notation header lines (with grep on in bbedit search)
 _________________________
 2011-09-24 18:42
 
@@ -32,6 +34,72 @@ hist(yset,10)
 % wrong: yset has mean of 3, S.D. 1
 hist(xset,10)
 -----
+
+h4. matlab; ~/_math801f11/shlensPcaTut.m
+
+% -----
+function [signals,PC,V] = pca1(data)
+
+% PCA1: Perform PCA using covariance.
+% data - MxN matrix of input data
+% (M dimensions, N trials)
+% signals - MxN matrix of projected data
+% PC - each column is a PC
+% V - Mx1 matrix of variances
+
+[M,N] = size(data);
+
+% subtract off the mean for each dimension
+
+mn = mean(data,2);
+data = data - repmat(mn,1,N);
+
+% calculate the covariance matrix
+covariance = 1 / (N-1) * data * data’;
+
+% find the eigenvectors and eigenvalues
+[PC, V] = eig(covariance);
+
+% extract diagonal of matrix as vector
+V = diag(V);
+
+% sort the variances in decreasing order
+[junk, rindices] = sort(-1*V);
+V = V(rindices);
+PC = PC(:,rindices);
+
+% project the original data set
+signals = PC’ * data;
+
+% -----
+function [signals,PC,V] = pca2(data
+
+% PCA2: Perform PCA using SVD.
+% data - MxN matrix of input data
+% (M dimensions, N trials)
+% signals - MxN matrix of projected data
+% PC - each column is a PC
+% V - Mx1 matrix of variances
+[M,N] = size(data);
+
+% subtract off the mean for each dimension
+
+mn = mean(data,2);
+data = data - repmat(mn,1,N);
+
+% construct the matrix Y
+Y = data’ / sqrt(N-1);
+
+% SVD does it all
+[u,S,PC] = svd(Y);
+
+% calculate the variances
+S = diag(S);
+V = S .* S;
+
+% project the original data
+signals = PC’ * data
+
 _________________________
 2011-09-23 18:20
 
@@ -509,10 +577,10 @@ drwxr-xr-x  24 keith  admin   816 Sep 17 12:39 ..
 -rw-r--r--@  1 keith  keith    70 Sep 17 11:45 network.lic.2010
 ls -la license_dyn-128-104-4-251_632951_R2010b.lic.deact
 _________________________
-2011-09-24 20:27 GMT-05:00  #;ref (references)
+h4. ref; (references) 2011-09-24 20:27 GMT-05:00
 
 http://www.cs.princeton.edu/picasso/mats/PCA-Tutorial-Intuition_jp.pdf  <== ++
-~/_math801f11/shlensPcaTut.m
+~/_ma801f11/shlensPcaTut.m
 
 cites:
 http://www.uwlax.edu/faculty/will/svd/index.html 
@@ -527,7 +595,7 @@ tutorial 4) Statistics....
 
 http://ocw.mit.edu/courses/mathematics/18-466-mathematical-statistics-spring-2003/  <== ++
 
-"RAP" in lecture notes to above
+"RAP" in lecture notes from above course
 Author:            Dudley, R. M. (Richard M.)
 Title:             Real analysis and probability / R.M. Dudley.
 Publisher:         Cambridge ; New York : Cambridge University Press, 2002.
