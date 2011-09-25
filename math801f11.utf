@@ -1,27 +1,8 @@
-~/Documents/_math801f11/math801f11.utf
+~/Documents/_math801f11/math801f11.utf  #;math;bio;
 _________________________
 2011-09-24 18:42
 
 http://www.ces.clemson.edu/~petersj/Agents/MatLabNA/index.html  <== SVD etc. ++
-
-_________________________
-2011-01-21 07:50
-
-http://www.matlabcorner.com/matlab-tutorial-2-matrices-in-matlab/
-
-tutorial 4) Statistics....
-
-http://ocw.mit.edu/courses/mathematics/18-466-mathematical-statistics-spring-2003/  <== ++
-
-
-"RAP" in lecture notes to above
-Author:            Dudley, R. M. (Richard M.)
-Title:             Real analysis and probability / R.M. Dudley.
-Publisher:         Cambridge ; New York : Cambridge University Press, 2002.
-Location:          Wendt Library Book Stacks
-Call Number:       QA300 D83 2002
-_________________________
-2011-09-24 13:13
 
 Arash Sangari''s .m file of sept. 21; working toward PCA for root growth;  copied and pasted from the command history window in matlab:
 
@@ -106,7 +87,7 @@ Some ideas:
  plot type is stable w.r.t. changing the epsilon -> stability indicates
  biological importance
 
- 4) One thing of interest would be the Taken's theorem to reconstruct the
+ 4) One thing of interest would be the Taken''s theorem to reconstruct the
  phase space. We could analyze stability wrt changing the dimensionality of
  the phase space.
 
@@ -133,7 +114,8 @@ Mona Jalal <mona66jalal@gmail.com>, Mohammad Khabbazian <mhkhabbazian@gmail.com>
 Flash:  http://www.webconstruction.ch/download  <== Joomla plugin: SWF Content Pro (non-commercial)
   http://www.webconstruction.ch/images/downloads/swfcontent-pro_3.3.4.zip  <== current release
   
-
+http://www.khazl.org/joom/administrator/index.php?option=com_users   <== Joomla login
+cap0, 801b0s5 dkh
 _________________________
 2011-09-20 17:38
 
@@ -488,3 +470,28 @@ drwxr-xr-x  24 keith  admin   816 Sep 17 12:39 ..
 -rwxrwxrwx   1 keith  admin   107 Jan 25  2011 license_dyn-128-104-4-251_632951_R2010b.lic.deact
 -rw-r--r--@  1 keith  keith    70 Sep 17 11:45 network.lic.2010
 ls -la license_dyn-128-104-4-251_632951_R2010b.lic.deact
+_________________________
+2011-09-24 20:27 GMT-05:00  #;ref (references)
+
+http://www.cs.princeton.edu/picasso/mats/PCA-Tutorial-Intuition_jp.pdf  <== ++
+~/_math801f11/shlensPcaTut.m
+
+cites:
+http://www.uwlax.edu/faculty/will/svd/index.html 
+http://www.uwlax.edu/faculty/will/
+~/_math801f11/willMmaWorkshop.nb
+_________________________
+2011-01-21 07:50
+
+http://www.matlabcorner.com/matlab-tutorial-2-matrices-in-matlab/
+
+tutorial 4) Statistics....
+
+http://ocw.mit.edu/courses/mathematics/18-466-mathematical-statistics-spring-2003/  <== ++
+
+"RAP" in lecture notes to above
+Author:            Dudley, R. M. (Richard M.)
+Title:             Real analysis and probability / R.M. Dudley.
+Publisher:         Cambridge ; New York : Cambridge University Press, 2002.
+Location:          Wendt Library Book Stacks
+Call Number:       QA300 D83 2002
