@@ -2,6 +2,77 @@ h4. math;bio ~/Documents/_math801f11/math801f11.utf
 
 ^h[1-6]\.   <== find all confluence notation header lines (with grep flag on in bbedit search)
 _________________________
+2011-09-26 08:57
+
+%-- 2011-09-25 22:18 --%
+
+Mu = [0;0];
+Sigma = [1;1];
+Npoint = 100;
+pdx = ProbDistUnivParam('normal',[Mu(1) Sigma(1)]);
+pdy = ProbDistUnivParam('normal',[Mu(2) Sigma(2)]);
+xset = pdx.random(1,Npoint);
+% xset is a column vector of length 100
+% xset values are random samples of a normal distribution with mean 0 and S.D. of 1.
+% yset is a column vector in r^100 where y(i) is a random sample from a normal distribution
+% with a mean of 0 and S.D. of 1
+yset = pdy.random(1,Npoint);
+% 'yset is given a level of correlation with xset'
+yset = .75*yset + .25*xset
+setA = [xset;yset];
+save setA setA
+
+A = setA;
+figure;scatter(A(1,:),A(2,:),'red')
+hold on
+axis equal
+xlabel('X');ylabel('Y');
+grid on
+
+M1 = mean(A,2);
+MM = M1*ones(1,size(A,2));
+K=A*A'
+[V1,D1]=eig(K)
+L = V1(:,2)
+
+L=L*ones(1,2)
+L(:,2)=-L(:,2)
+L=L*6
+plot(L(1,:),L(2,:))
+
+%-- 2011-09-26 09:05 --%
+Mu = [0;0];
+Sigma = [1;1];
+Npoint = 100;
+pdx = ProbDistUnivParam('normal',[Mu(1) Sigma(1)]);
+pdy = ProbDistUnivParam('normal',[Mu(2) Sigma(2)]);
+xset = pdx.random(1,Npoint);
+% xset is a column vector of length 100
+% xset values are random samples of a normal distribution with mean 0 and S.D. of 1.
+% yset is a column vector in r^100 where y(i) is a random sample from a normal distribution
+% with a mean of 0 and S.D. of 1
+yset = pdy.random(1,Npoint);
+% 'yset is given a level of correlation with xset'
+yset = .75*yset + .25*xset
+setA = [xset;yset];
+save setA setA
+A = setA;
+figure;scatter(A(1,:),A(2,:),'red')
+hold on
+axis equal
+xlabel('X');ylabel('Y');
+grid on
+M1 = mean(A,2);
+MM = M1*ones(1,size(A,2));
+K=A*A'
+[V1,D1]=eig(K)
+L = V1(:,2)
+L=L*ones(1,2)
+L(:,2)=-L(:,2)
+L=L*6
+plot(L(1,:),L(2,:))
+----
+_________________________
 2011-09-24 22:19
 
 * Complete log of matlab commands since installation 5 days ago! Includes attempts at PCA in last two days
@@ -318,10 +389,11 @@ axis equal
 A = setA;
 size(A)
 M1=mean(A,2);
-size(M1)
-M1
+% ' For matrices, mean(A,2) is a column vector containing the mean value of each ROW.'
+% ' mean(A,dim) returns the mean values for elements along the dimension of A specified by scalar dim'
 %M1 is a two row column vector of M1(1) is the mean of the x's (row 1 of A)
 %                                 M1(2) is the mean of the y's (row 2 of A)
+size(M1)
 xset = pdx.random(1,Npoint);
 size(xset)
 yset = pdy.random(1,Npoint);
@@ -358,14 +430,12 @@ M1*MM
 size (MM*M1)
 size (M1*MM)
 MM = M1*MM
-% so we're going to subtract the mean of x from all the x values in row one
-%               and subtract the mean of y from all the y values in row two
+% 'so we''re going to subtract the mean of x from all the x values in row one'
+% '               and subtract the mean of y from all the y values in row two'
 size(A)
 size(M1)
 size(MM)
 Azm = A - MM
-Size (Azm)
-Azm
 size(Azm)
 figure;scatter(Azm(1,:),Azm(2,:),'blue')
 % Azm is the x,y pairs where both x ^ y values have a mean of 0
@@ -409,8 +479,8 @@ Arash Sangari''s .m file of sept. 21; working toward PCA for root growth;  copie
 clc
 close all
 clear
-Mu = [2;3];
-Sigma = [2;1];
+Mu = [0;0];
+Sigma = [1;1];
 Npoint = 100;
 pdx = ProbDistUnivParam('normal',[Mu(1) Sigma(1)]);
 pdy = ProbDistUnivParam('normal',[Mu(2) Sigma(2)]);
@@ -418,10 +488,10 @@ xset = pdx.random(1,Npoint);
 size(xset)
 % xset is a column vector of length 100
 xset(1:20)
-% xset values are random samples of a normal distribution with mean 2 and S.D. of 2.
+% xset values are random samples of a normal distribution with mean 0 and S.D. of 1.
 hist(xset,10)
-% yset is a column vector in r^100 where x(i) is a random sample from a normal distribution
-% with a mean of 2 and S.D. of 1
+% yset is a column vector in r^100 where y(i) is a random sample from a normal distribution
+% with a mean of 0 and S.D. of 1
 hist(yset,10)
 yset = pdy.random(1,Npoint);
 hist(yset,10)
