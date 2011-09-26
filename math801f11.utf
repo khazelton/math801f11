@@ -2,6 +2,39 @@ h4. math;bio ~/Documents/_math801f11/math801f11.utf
 
 ^h[1-6]\.   <== find all confluence notation header lines (with grep flag on in bbedit search)
 _________________________
+2011-09-26 13:54
+
+
+_________________________
+2011-09-26 13:45
+
+From: Amir Assadi <ahassadi@wisc.edu>
+Subject: MATH 801 This week
+Date: September 26, 2011 09:58:22 CDT
+To: Math 801 <math801-1-f11@lists.wisc.edu>
+Cc: 
+Majid Arabgol <majid.arabgol@gmail.com>, 
+Atefeh namvary <namvary@yahoo.com>, 
+David Weber <david.weber2@gmail.com>, 
+Jernej Tonejc <jernej.tonejc@gmail.com>, 
+Warren Porter <wpporter@wisc.edu>, 
+Sarah Porter <porter1122@yahoo.com>, 
+Fariba Assadi-Porter <fassadiporter@gmail.com>, 
+ARASH BAHRAMI <abahrami@wisc.edu>
+
+Friends,
+
+This week we have 3 visitors from Japan and Europe, and a very intensive research/training schedule. My apologies for a slight change in time, due to the need for the auditorium. Please note special time & place for Monday.
+_____
+Monday 4:00-5:00pm Professor Takagi's lecture on plant biology, followed by Dr. Jernej Tonejc 5:00-5:30 pm on modeling growth of roots and related algorithms.
+Place: Biotechnology Center Auditorium 425 Henry Mall (5-10 minutes walk from van Vleck Hall)
+_____
+Wednesday 4:30-6:45pm (back to the usual schedule, B107 as usual)   Dr. Jernej Tonejc  will provide hands-on training of the modeling, using data from growth of roots, discussion of algorithm, programs, and analysis.
+_____
+Thursday: A student guest, Yicong Ma, from Penn State (and Beijing, China) arrives and will be in Madison until Sunday.
+_____
+Friday: 6:pm - 8:30pm Party in 9th floor for our class, Persepolis, new Math PhD students,  and some collaborating labs on campus.  The room is reserved, refreshments (non-alcoholoc and alcoholic).
+_________________________
 2011-09-26 08:57
 
 %-- 2011-09-25 22:18 --%
@@ -501,7 +534,7 @@ hist(yset,10)
 hist(xset,10)
 -----
 
-h4. matlab; ~/_math801f11/shlensPcaTut.m
+h4. pca;matlab; ~/_math801f11/shlensPcaTut.m
 
 code from Jon Shlens PCA Tutorial (see h4. ref;)
 
@@ -1054,6 +1087,48 @@ cites:
 http://www.uwlax.edu/faculty/will/svd/index.html 
 http://www.uwlax.edu/faculty/will/
 ~/_math801f11/willMmaWorkshop.nb
+
+h6. rootGrowth;
+
+Thanks to Hesam, here are more references for root growth....
+
+Best, aa
+-----
+On Sep 26, 2011, at 10:48 AM, Hesam Dashti wrote:
+Hi,These are references that I have in my queue, I have started with the first one:
+
+Auxin fluxes in the root apex co-regulate gravitropism and lateral root initiation
+http://jxb.oxfordjournals.org/content/59/1/55.abstract
+
+
+Modeling the Hydraulics of Root Growth in Three Dimensions with Phloem Water Sources
+http://www.plantphysiol.org/content/150/4/2092.short
+
+
+Hairy Root Growth Models: Effect of Different Branching Patterns
+http://pubs.acs.org/doi/abs/10.1021/bp00032a600
+
+
+Differential growth and plant tropisms: a study assisted by computer simulation
+http://www.ncbi.nlm.nih.gov/pubmed/11541038
+
+
+Individualism in plant populations: using stochastic differential equations to model individual neighbourhood-dependent plant growth.
+http://www.ncbi.nlm.nih.gov/pubmed/18619390
+
+
+Individualism in plant populations: Using stochastic differential equations to model individual neighbourhood-dependent plant growth
+http://www.sciencedirect.com/science/article/pii/S0040580908000555
+
+--Hesam.
+-----
+On 09/26/11, Amir Assadi   wrote:
+Please see the description and browse a couple of review articles by Baskin:
+
+http://www.bio.umass.edu/biology/baskin/research_rootflow.htm
+
+more modeling details appear in recent articles that I will send.
+-----
 _________________________
 2011-01-21 07:50
 
