@@ -32,7 +32,7 @@ grid on
 K=A*A'
 [V1,D1]=eig(K)
 L = V1(:,2)
-% 'L is the column of the eigenvector matrix V1 that corresponds to the largest diagonal element of D1'
+% 'L is the column of the eigenvector matrix V1 that corresponds to the largest diagonal element (eigenvalue) of D1'
 
 % 'Draw a line in the figure that corresponds to the eigenvector and goes through (0,0)'
 L=L*ones(1,2)
