@@ -1,6 +1,43 @@
 h4. math;bio ~/Documents/_math801f11/math801f11.utf
 
 ^h[1-6]\.   <== find all confluence notation header lines (with grep flag on in bbedit search)
+_________________________
+2011-09-28 16:30
+
+running TraceCurve3 from folder math801w3; jernej algorithms for tracing root growth using PCA/SVD
+
+
+
+_data mining practical machine learning_ Ian Witten, Elbe Frank ++
+
+-----
+I=imread('C:\Users\student10\Desktop\Math801\data\250.tif');
+
+[Coords vertices] = TraceCurve3(I)
+
+scatter(-Coords(:,2),Coords(:,1))
+figure;imshow(I)
+
+I=imread('C:\Users\student10\Desktop\Math801\data\150.tif');
+
+[Coords vertices] = TraceCurve3(I)
+
+scatter(-Coords(:,2),Coords(:,1))
+figure;imshow(I)
+
+size(I)
+scatter(-vertices(:,2),vertices(:,1))
+figure; scatter(-vertices(:,2),vertices(:,1))
+-----
+_________________________
+2011-09-27 16:25
+
+http://masson.genetics.wisc.edu/?q=node/11
+
+http://youtu.be/EORgp8gxwrE  <== multiple plant root time lapse movie showing gravitropism
+
+see _math801f11/images for downloaded mp4 & jpegs of captured frames
+_________________________
 
 _________________________
 2011-09-27 16:25
