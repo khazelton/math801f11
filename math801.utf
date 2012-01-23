@@ -1,0 +1,661 @@
+~/_notesPlus/math801.utf
+
+http://vv811a.math.wisc.edu/index.html/administrator
+c0-M
+
+http://www.khazl.org/joom/administrator/index.php?option=com_users   <== Joomla login
+cap0, 801b0s5 dkh
+_________________________
+2011-11-07 16:00
+
+update persepolis site
+
+http://www.demo2.ari-soft.com/ari-ext-menu.html  <== clean drop-down menus
+
+
+_________________________
+2011-09-17 13:08
+
+* Battling Matlab license manager
+
+-----
+static-128-104-17-180:MATLAB_R2010b.app keith$ pwd
+/Applications/MATLAB_R2010b.app
+static-128-104-17-180:MATLAB_R2010b.app keith$ ls -la etc
+total 4824
+drwxr-xr-x  21 keith  admin      714 Sep 17 12:29 .
+drwxr-xr-x  24 keith  admin      816 Sep 17 12:39 ..
+-r--r--r--   1 keith  admin  2169629 Jun 28  2010 LicenseAdministration.pdf
+drwxr-xr-x   4 keith  admin      136 Sep 17 12:29 MATLABLmgr
+-r--r--r--   1 keith  admin     1271 Mar 16  2006 flexnet.boot.linux
+-rw-rw-rw-   1 keith  keith     6226 Sep 17 12:39 license.dat
+-r-xr-xr-x   1 keith  admin    11594 Jun 28  2010 lm_matlab
+-r-xr-xr-x   1 keith  admin    49439 Jun 28  2010 lmboot
+-r-xr-xr-x   1 keith  admin    41070 Jun 28  2010 lmdebug
+-r-xr-xr-x   1 keith  admin    14188 Jun 28  2010 lmdiag
+-r-xr-xr-x   1 keith  admin    21142 Jun 28  2010 lmdown
+-r-xr-xr-x   1 keith  admin     9776 Jun 28  2010 lmhostid
+-r-xr-xr-x   1 keith  admin     8478 Sep 17  2007 lmopts.sh
+-r-xr-xr-x   1 keith  admin    13814 Jun 28  2010 lmremove
+-r-xr-xr-x   1 keith  admin    13662 Jun 28  2010 lmreread
+-r-xr-xr-x   1 keith  admin    30029 Jun 28  2010 lmstart
+-r-xr-xr-x   1 keith  admin    14178 Jun 28  2010 lmstat
+-r-xr-xr-x   1 keith  admin    12237 Jun 28  2010 lmswitchr
+-r-xr-xr-x   1 keith  admin    13751 Jun 28  2010 lmver
+drwxr-xr-x  15 keith  admin      510 Sep 17 12:29 maci64
+drwxr-xr-x   4 keith  admin      136 Sep 17 12:29 util
+
+static-128-104-17-180:MATLAB_R2010b.app keith$ cat etc/license.dat
+
+SERVER dyn-128-104-4-251.doit.wisc.edu 00264A00D70A 27000 
+DAEMON MLM "/Applications/MATLAB_R2010b.app/etc/maci64/lm_matlab"
+# BEGIN--------------BEGIN--------------BEGIN
+# MathWorks license passcode file.
+# LicenseNo: 678095   HostID: 00264A00D70A
+#
+# R2010b
+#
+INCREMENT MATLAB MLM 24 01-feb-2012 10940 AD3E5103FDB7A10EB6FE \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE=product=MATLAB SN=678095
+INCREMENT SIMULINK MLM 24 01-feb-2012 10940 9DFE61D31EBF00E4E0EB \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE=product=Simulink SN=678095
+INCREMENT Bioinformatics_Toolbox MLM 24 01-feb-2012 10940 \
+	6D1E41C3385C0B7A4212 \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=Bioinformatics Toolbox" SN=678095
+INCREMENT Control_Toolbox MLM 24 01-feb-2012 10940 \
+	4DBED173697DF9A1B5BF \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=Control System Toolbox" SN=678095
+INCREMENT Curve_Fitting_Toolbox MLM 24 01-feb-2012 10940 \
+	FDFEB1D398C7BE14921D \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=Curve Fitting Toolbox" SN=678095
+INCREMENT Data_Acq_Toolbox MLM 24 01-feb-2012 10940 \
+	9D2EA1830DE1535B5CD4 \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=Data Acquisition Toolbox" SN=678095
+INCREMENT Database_Toolbox MLM 24 01-feb-2012 10940 \
+	9D6EF193714FEAD06A51 \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=Database Toolbox" SN=678095
+INCREMENT Image_Toolbox MLM 24 01-feb-2012 10940 1D6E51D328A0BB14B15F \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=Image Processing Toolbox" SN=678095
+INCREMENT Instr_Control_Toolbox MLM 24 01-feb-2012 10940 \
+	DD6E817390425B42EC2C \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=Instrument Control Toolbox" SN=678095
+INCREMENT Compiler MLM 24 01-feb-2012 10940 BD7E5123EFE47893E49F \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=MATLAB Compiler" SN=678095
+INCREMENT MAP_Toolbox MLM 24 01-feb-2012 10940 BD7E719328D052A415E7 \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=Mapping Toolbox" SN=678095
+INCREMENT Neural_Network_Toolbox MLM 24 01-feb-2012 10940 \
+	AD8E01539D95C8EF79EB \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=Neural Network Toolbox" SN=678095
+INCREMENT Optimization_Toolbox MLM 24 01-feb-2012 10940 \
+	6D8E9193DA8BF7116022 \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=Optimization Toolbox" SN=678095
+INCREMENT Distrib_Computing_Toolbox MLM 24 01-feb-2012 10940 \
+	DDDE7173C3ECCA014765 \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=Parallel Computing Toolbox" SN=678095
+INCREMENT PDE_Toolbox MLM 24 01-feb-2012 10940 2DDE81533695EBBB6F54 \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=Partial Differential Equation Toolbox" \
+	SN=678095
+INCREMENT Signal_Blocks MLM 24 01-feb-2012 10940 FD2ED173C772C473B629 \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=Signal Processing Blockset" SN=678095
+INCREMENT Signal_Toolbox MLM 24 01-feb-2012 10940 \
+	CD6EB1B353980703C8C6 \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=Signal Processing Toolbox" SN=678095
+INCREMENT SimMechanics MLM 24 01-feb-2012 10940 FDFEB1D36C9B896810D4 \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE=product=SimMechanics SN=678095
+INCREMENT Simscape MLM 24 01-feb-2012 10940 1DDEB1F3000167CA4AB8 \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE=product=Simscape SN=678095
+INCREMENT Excel_Link MLM 24 01-feb-2012 10940 0D1E71B30ECC0DFB8A20 \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=Spreadsheet Link EX" SN=678095
+INCREMENT Stateflow MLM 24 01-feb-2012 10940 AD6E716368F9B392426A \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE=product=Stateflow SN=678095
+INCREMENT Statistics_Toolbox MLM 24 01-feb-2012 10940 \
+	6DAEF153460C6D3E65F1 \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=Statistics Toolbox" SN=678095
+INCREMENT Symbolic_Toolbox MLM 24 01-feb-2012 10940 \
+	1DFEC173E11BA7F7131F \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=Symbolic Math Toolbox" SN=678095
+INCREMENT Identification_Toolbox MLM 24 01-feb-2012 10940 \
+	CDDE61537A38CD21E6DC \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=System Identification Toolbox" SN=678095
+INCREMENT Wavelet_Toolbox MLM 24 01-feb-2012 10940 \
+	4D9E2103181A0F770C29 \
+	VENDOR_STRING=vi=0:at=299:ae=1:lu=200:lo=TA1:ei=1263506: \
+	DUP_GROUP=UH asset_info=678095 ISSUED=19-Jan-2011 \
+	NOTICE="product=Wavelet Toolbox" SN=678095
+# END-----------------END-----------------END
+static-128-104-17-180:MATLAB_R2010b.app keith$ 
+
+-----
+static-128-104-17-180:StartupItems keith$ pwd
+/Library/StartupItems
+static-128-104-17-180:StartupItems keith$ ls -la
+
+total 8
+drwxr-xr-x  12 root  wheel   408 Jul 27 19:32 .
+drwxr-xr-x+ 85 root  wheel  2890 Jul 27 19:32 ..
+drwxr-xr-x   5 root  wheel   170 Jul  2  2004 Apache2
+-rwxr-xr-x@  1 root  wheel     0 Apr 16  2002 Icon?
+drwxr-xr-x   5 root  wheel   170 Feb  2  2006 M-Audio Firmware Loader
+drwxr-xr-x   8 root  wheel   272 Sep 17 12:39 MATLABLmgr
+drwxr-xr-x@  5 root  wheel   170 Jun 16  2004 MxBtDaemon
+drwxr-xr-x   4 root  wheel   136 Sep  3  2005 MySQL
+drwxr-xr-x   4 root  wheel   136 May 26  2006 MySQLCOM
+drwxr-xr-x   6 root  wheel   204 Sep 11  2007 Parallels
+drwxr-xr-x   5 root  wheel   170 Sep 11  2007 ParallelsTransporter
+drwxr-xr-x   4 root  wheel   136 Jun  9  2004 RetroRun
+
+static-128-104-17-180:StartupItems keith$ cat MATLABLmgr/MATLABLmgr
+
+#!/bin/sh
+
+# The MATLAB installer application (InstallForMacOSX) will automatically configure 
+# and install this script. To install this script manually, perform the following 
+# actions as an Administrator:
+#
+# 1. Navigate via the Finder to the top level /Library folder.
+# 2. Create a folder within /Library called StartupItems, if it does not already exist.
+# 3. Copy the $MATLAB/etc/MATLABLmgr folder into the StartupItems folder.
+# 4. Open /Library/StartupItems/MATLABLmgr/MATLABLmgr with a text editor.
+# 5. Change /Applications/MATLAB_R2010b.app to be the location where MATLAB is installed.
+# 6. Change keith to be the short user name under which the 
+#    license manager daemon will be started (for security reasons, this must not be 
+#    "root").
+# 7. Save MATLABLmgr back to disk. If your text editor gives you the option to choose
+#    line ending styles (Macintosh versus UNIX), be sure to choose UNIX line endings.
+# 8. Reboot.
+
+# $Revision: 1.2.4.4 $
+
+. /etc/rc.common
+
+#
+
+MATLAB=/Applications/MATLAB_R2010b.app # example: MATLAB=/Applications/MATLAB_R2010b.app
+ME=keith # example: ME=cmoler
+MATHWORKS_LICENSE_FILE="$MATLAB/etc/license.dat"
+
+StartService ()
+{
+    ### start FLEXnet ###
+    ConsoleMessage "Starting MATLAB License Manager"
+    LMGRD="$MATLAB/etc/maci64/lmgrd"
+    if [ -f $LMGRD ]; then
+        # Sleep for a while to make sure all the networking services
+        # have started up.  Otherwise the hostname in the license file
+        # or the username we are su'ing to might not be resolvable.
+        sleep 30
+        su $ME -c "$LMGRD -c $MATHWORKS_LICENSE_FILE -l /var/tmp/lm_TMW.log"
+    else
+        echo "Cannot locate $LMGRD"
+        ConsoleMessage -F
+    fi
+}
+
+StopService ()
+{
+    ### stop FLEXnet ###
+    ConsoleMessage "Stopping MATLAB License Manager"
+    LMDOWN="$MATLAB/etc/maci64/lmdown"
+    if [ -f $LMDOWN ]; then
+        $LMDOWN -q -c $MATHWORKS_LICENSE_FILE
+    else
+        echo "Cannot locate $LMDOWN"
+        ConsoleMessage -F
+    fi
+}
+
+RestartService ()
+{
+    ### stop then start FLEXnet ###
+    StopService
+    StartService
+}
+
+RunService "$1"
+static-128-104-17-180:StartupItems keith$ 
+
+-----
+ - license manager was initially configured to use the server host: dyn-128-104-4-251.doit.wisc.edu.
+
+ - my current dns name is static-128-104-17-180.doit.wisc.edu
+
+ - So... add entry in /etc/hosts to remap old to new:
+
+static-128-104-17-180:etc keith$ pwd
+/etc
+static-128-104-17-180:etc keith$ cat hosts
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost 
+fe80::1%lo0	localhost
+128.104.4.231	grouper-bs1.doit.wisc.edu	grouper-bs1
+128.104.17.180	dyn-128-104-4-251.doit.wisc.edu	dyn-128-104-4-251
+-----
+
+static-128-104-17-180:etc keith$ su keith -c /Applications/MATLAB_R2010b.app/etc/maci64/lmgrd -c /Applications/MATLAB_R2010b.app/etc/license.dat -l /var/tmp/lm_TMW.log
+Password:
+
+static-128-104-17-180:etc keith$ 13:34:34 (lmgrd) -----------------------------------------------
+13:34:34 (lmgrd)   Please Note:
+13:34:34 (lmgrd) 
+13:34:34 (lmgrd)   This log is intended for debug purposes only.
+13:34:34 (lmgrd)   In order to capture accurate license
+13:34:34 (lmgrd)   usage data into an organized repository,
+13:34:34 (lmgrd)   please enable report logging. Use Acresso Software Inc.'s
+13:34:34 (lmgrd)   software license administration  solution,
+13:34:34 (lmgrd)   FLEXnet Manager, to  readily gain visibility
+13:34:34 (lmgrd)   into license usage data and to create
+13:34:34 (lmgrd)   insightful reports on critical information like
+13:34:34 (lmgrd)   license availability and usage. FLEXnet Manager
+13:34:34 (lmgrd)   can be fully automated to run these reports on
+13:34:34 (lmgrd)   schedule and can be used to track license
+13:34:34 (lmgrd)   servers and usage across a heterogeneous
+13:34:34 (lmgrd)   network of servers including Windows NT, Linux
+13:34:34 (lmgrd)   and UNIX. Contact Acresso Software Inc. at
+13:34:34 (lmgrd)   www.acresso.com for more details on how to
+13:34:34 (lmgrd)   obtain an evaluation copy of FLEXnet Manager
+13:34:34 (lmgrd)   for your enterprise.
+13:34:34 (lmgrd) 
+13:34:34 (lmgrd) -----------------------------------------------
+13:34:34 (lmgrd) 
+13:34:34 (lmgrd) 
+13:34:34 (lmgrd) FLEXnet Licensing (v11.6.1.0 build 66138 x64_mac10) started on dyn-128-104-4-251.doit.wisc.edu (Mac) (9/17/2011)
+13:34:34 (lmgrd) Copyright (c) 1988-2008 Acresso Software Inc. All Rights Reserved.
+13:34:34 (lmgrd) US Patents 5,390,297 and 5,671,412.
+13:34:34 (lmgrd) World Wide Web:  http://www.acresso.com
+13:34:34 (lmgrd) License file(s): /usr/local/flexlm/licenses/license.dat
+13:34:34 (lmgrd) lmgrd tcp-port 27000
+13:34:34 (lmgrd) Starting vendor daemons ... 
+13:34:34 (lmgrd) Started MLM (internet tcp_port 49504 pid 1229)
+13:34:34 (MLM) FLEXnet Licensing version v11.6.1.0 build 66138 i86_mac10
+13:34:34 (MLM) Server started on dyn-128-104-4-251.doit.wisc.edu for:	MATLAB		
+13:34:34 (MLM) SIMULINK	Bioinformatics_Toolbox Control_Toolbox 
+13:34:34 (MLM) Curve_Fitting_Toolbox Data_Acq_Toolbox Database_Toolbox 
+13:34:34 (MLM) Image_Toolbox	Instr_Control_Toolbox Compiler	
+13:34:34 (MLM) MAP_Toolbox	Neural_Network_Toolbox Optimization_Toolbox 
+13:34:34 (MLM) Distrib_Computing_Toolbox PDE_Toolbox	Signal_Blocks	
+13:34:34 (MLM) Signal_Toolbox	SimMechanics	Simscape	
+13:34:34 (MLM) Excel_Link	Stateflow	Statistics_Toolbox 
+13:34:34 (MLM) Symbolic_Toolbox Identification_Toolbox Wavelet_Toolbox 
+13:34:34 (MLM) EXTERNAL FILTERS are OFF
+13:34:34 (lmgrd) MLM using TCP-port 49504
+13:34:50 (MLM) TCP_NODELAY NOT enabled
+13:34:50 (MLM) OUT: "MATLAB" keith@static-128-104-17-180.doit.wisc.edu
+
+ - SUCCESS!!  Matlab is running
+_________________________
+2011-09-14 12:13
+
+_______
+On PCA: 
+
+1.1 Definition and Derivation of Principal Components 
+Suppose that:
+
+x is a vector of p random variables, 
+     and that the variances of the p random variables 
+     and the structure of the covariances or correlations between the p variables 
+     are of interest. 
+
+Unless p is small, or the structure is very simple, it will often not be very helpful to simply look at the p variances and all of the [?](p - 1) correlations or covariances. An alternative approach is 
+
+to look for a few (≪ p) derived variables that preserve most of the information given by these variances and correlations or covariances. 
+
+Jolliffe, I.T. (2002). Principal Component Analysis (Springer Series in Statistics) (Kindle Locations 354-359). Springer New York. Kindle Edition. 
+
+_______
+Table:   
+wf=session(1).wf; %Load waveforms 
+[coeff,score]=princomp(wf); %Compute principal components 
+edges{1}=[-300:25:300]; %Bin for the X-axis 
+edges{2}=[-250:25:250]; %Bin for the Y-axis 
+h=hist3(score(:,1:2),edges); %Compute a 2-D histogram 
+s=surface(h'); %Visualize the histogram as a surface (note the apostrophe) set(s,‘XData’,edges{1}) %Label the X-axis 
+
+Wallisch, Pascal (2008). Matlab for Neuroscientists: An Introduction to Scientific Computing in Matlab (Kindle Locations 3212-3222). Academic Press. Kindle Edition. 
+_________________________
+2011-09-13 18:13
+=======
+>>>>>>> bf61f8704b66a8b09a611fe879982f40c05abefb
+
+http://www.khazl.org/joom/administrator/index.php?option=com_users   <== Joomla login
+cap0, 801b0s5 dkh
+
+_____________
+http://discussion.dreamhost.com/thread-104907.html
+
+My [Joomla] "staging" routime goes like this:
+
+1) Create a subdomain on DreamHost to hold the development site. This can be a "free" dreamhosters.com subdomain (anythingnotyettaken.dreamhosters.com) or a subdomain of the site being deployed (dev1.yournewdomain.tld), or a subdomain or one of your existing domains (newsitedev.yourexistingdomain.tld), etc.
+
+2) Create a database, and a host, to hold the data fro the Joomla! site being developed. You can also use an preciously existing db, as Joomla! allows you to define a prefix for it''s tables to avoid conflicts with other tables in a pre-existing database), but since you can have an unlimited number of databases at no additional cost on DreamHost, unless you have a reason to want to put "many sites in one database" for ease of backup or some other reason, I see no reason not to keep it simple and just create a new one.
+
+3) Install Joomla! in that subdomain. Either manually or via the "one-click" installer - either way is fine. I prefer to install Joomla! via the shell using wget and tar because it is really quick and easy. Installing the Joomla! code that will (later) become the "live" site directly opn the server avoid the common problem reliably uploading the *ginormous* number of files that comprise Joomla! via FTP without error, and assures all your permissions are accurately set for Joomla! operation *on DreamHost*! (you might want to check out a related thread for more information on that issue).   
+
+4) Optionally, protect the "dev" Joomla! installation from public viewing before you are ready via apache authentication and .htaccess
+
+5) Build the site on the server!
+
+Now, when the site is ready to launch, it''s a five-minute process (or less!) to rename the dev subdomain directory to the name of the "live" site''s web directory, edit a couple of variables in the configuration file, and go "live". No incompatible environment issues, no FTP issues, and you can see the site actually operating *as the visitors to the live site will see it* before you even launch.
+
+I think that process is just a better way to go at it, but, like with most things, YMMV. Hopefully, if you prefer to develop Joomla! sites on your own machine, some of this response has still been helpful. Good luck with your project(s)!   
+_________________________
+2011-09-16 08:38 GMT-05:00
+
+http://www.bytemining.com/wp-content/uploads/2010/07/r_hpc.pdf		<== Taking R to the Limit, Part I
+http://www.bytemining.com/wp-content/uploads/2010/08/r_hpc_II.pdf	<== Taking R to the Limit, Part II
+http://www.r-bloggers.com/taking-r-to-the-limit-large-datasets-predictive-modeling-with-pmml-and-adapa/		<== Taking R to the Limit, Video_________________________
+2011-09-12 16:00
+
+created khazelton/neurosci repo at github. use _neurosci as dirname for clones.
+
+drwxr-xr-x  11 keith  keith      374 Sep 12 13:30 .
+drwx------@ 66 keith  keith     2244 Sep 12 13:29 ..
+-rw-r--r--@  1 keith  keith     6148 Sep 12 13:30 .DS_Store
+drwxr-xr-x  12 keith  keith      408 Sep 12 13:28 .git
+drwxr-xr-x  10 keith  keith      340 Sep 12 13:28 Ce_synapse
+  drwxr-xr-x   6 keith  keith    204 Sep 12 13:28 Albertson_Fig
+    -rw-r--r--   1 keith  keith   9606 Sep 12 13:28 README_AF.txt
+	drwxr-xr-x  23 keith  keith    782 Sep 12 13:28 neurons
+	-rw-r--r--   1 keith  keith  59725 Sep 12 13:28 process_AF.pdf
+	-rw-r--r--   1 keith  keith  21465 Sep 12 13:28 synapse_AF.txt
+    
+    
+  -rw-r--r--   1 keith  keith   4997 Sep 12 13:28 PREFACE.txt
+  -rw-r--r--   1 keith  keith  11626 Sep 12 13:28 README.txt
+  drwxr-xr-x   8 keith  keith    272 Sep 12 13:28 White_Fig
+	-rw-r--r--    1 keith  keith    84558 Sep 12 13:28 NOTE_WF.pdf
+	-rw-r--r--    1 keith  keith    11523 Sep 12 13:28 README_WF.txt
+	drwxr-xr-x  213 keith  keith     7242 Sep 12 13:28 neurons
+		-rw-r--r--    1 keith  keith  1493 Sep 12 13:28 ADAL_WF.txt
+		-rw-r--r--    1 keith  keith  1416 Sep 12 13:28 ADAR_WF.txt
+		-rw-r--r--    1 keith  keith  2209 Sep 12 13:28 ADEL_WF.txt
+		-rw-r--r--    1 keith  keith  1849 Sep 12 13:28 ADER_WF.txt
+		-rw-r--r--    1 keith  keith  2053 Sep 12 13:28 ADFL_WF.txt
+		...
+		...
+	
+	
+	-rw-r--r--    1 keith  keith   846339 Sep 12 13:28 process_WF.pdf
+	-rw-r--r--    1 keith  keith   381035 Sep 12 13:28 synapse_WF.txt
+	-rw-r--r--    1 keith  keith  1299968 Sep 12 13:28 synapse_WF.xls
+  
+  
+  drwxr-xr-x   5 keith  keith    170 Sep 12 13:28 White_Table
+	-rw-r--r--   1 keith  keith   7816 Sep 12 13:28 README_WT.txt
+	drwxr-xr-x  34 keith  keith   1156 Sep 12 13:28 neurons
+		-rw-r--r--   1 keith  keith  6364 Sep 12 13:28 AVA_WT.txt
+		-rw-r--r--   1 keith  keith  2109 Sep 12 13:28 AVB_WT.txt
+		-rw-r--r--   1 keith  keith  2812 Sep 12 13:28 AVD_WT.txt
+		-rw-r--r--   1 keith  keith  2183 Sep 12 13:28 AVE_WT.txt
+		...
+		...
+		-rw-r--r--   1 keith  keith  2894 Sep 12 13:28 PVN_WT.txt
+		
+	-rw-r--r--   1 keith  keith  2855 Sep 12 13:28 PVN_WT_correct.txt
+	-rw-r--r--   1 keith  keith   999 Sep 12 13:28 PVP_WT.txt
+	-rw-r--r--   1 keith  keith   666 Sep 12 13:28 PVQ_WT.txt
+	-rw-r--r--   1 keith  keith   555 Sep 12 13:28 PVR_WT.txt
+	-rw-r--r--   1 keith  keith   148 Sep 12 13:28 PVT_WT.txt
+	-rw-r--r--   1 keith  keith   555 Sep 12 13:28 PVW_WT.txt
+	
+	
+	-rw-r--r--   1 keith  keith  35616 Sep 12 13:28 synapse_WT.txt
+	
+  
+  -rw-r--r--   1 keith  keith   2189 Sep 12 13:28 White_Text.txt
+  -rw-r--r--   1 keith  keith   5583 Sep 12 13:28 name_neurons.txt
+  -rw-r--r--   1 keith  keith   1282 Sep 12 13:28 name_others.txt
+
+
+-rw-r--r--   1 keith  keith       89 Sep 12 13:28 README
+drwxr-xr-x   8 keith  keith      272 Sep 12 13:35 c.Elegans
+  -rw-r--r--   1 keith  keith      603 Sep 12 13:30 catalog-v001.xml
+  -rw-r--r--   1 keith  keith  9663732 Sep 12 13:28 grossAnat.owl
+  -rw-r--r--   1 keith  keith  3003520 Sep 12 13:33 grossAnat.owl.manchester.utf
+  -rw-r--r--   1 keith  keith  7601686 Sep 12 13:35 grossAnat.owl.rdf.xml
+  -rw-r--r--   1 keith  keith  2079886 Sep 12 13:28 markWcEThesis.pdf
+  -rw-r--r--   1 keith  keith  3331716 Sep 12 13:28 wbphenotype.owl
+
+
+-rw-r--r--   1 keith  keith    15276 Sep 12 13:28 c.elegans.utf
+-rw-r--r--   1 keith  keith    12010 Sep 12 13:28 jsOntBrowser.x.html
+-rw-r--r--   1 keith  keith  5982111 Sep 12 13:28 mucow_linux.tar.gz
+-rw-r--r--   1 keith  keith     9246 Sep 12 13:28 network.utf
+
+
+_________________________
+2011-09-04 13:52 GMT-05:00
+
+http://nengo.ca <== "Nengo is a[n open source] software package for simulating large-scale neural systems."
+
+http://www.frontiersin.org/neuroinformatics/10.3389/neuro.11/007.2009/abstract <== Python scripting Nengo, Eliasmith.
+
+http://ctn.uwaterloo.ca/~cnrglab/?q=system/files/stewart+et+al_compositional+structures_connsci.pdf  
+  <----
+  _Connection Science_
+  Vol. 23, No. 2, June 2011, 145–153
+  "Neural representations of compositional structures: representing and manipulating vector spaces with spiking neurons"
+  Terrence C. Stewart*, Trevor Bekolay and Chris Eliasmith
+  Centre for Theoretical Neuroscience, University of Waterloo, 200 University Avenue West, Waterloo, Ontario, Canada N2L 3GI.
+  -----
+  
+http://www.philosophy.ox.ac.uk/__data/assets/pdf_file/0019/3853/brain-emulation-roadmap-report.pdf
+  <----
+  _Whole Brain Emulation: A Roadmap_
+  CITE: Sandberg, A. & Bostrom, N. (2008): 
+  _Whole Brain Emulation: A Roadmap_, 
+  Technical Report #2008‐3, 
+  Future of Humanity Institute, 
+  Oxford University
+  URL: www.fhi.ox.ac.uk/reports/2008‐3.pdf
+  (*) Corresponding author: anders.sandberg@philosophy.ox.ac.uk
+  -----
+  
+http://cognitivesciencesociety.org/uploads/t5.Eliasmith.pdf  <== description of nengo tutorial
+  <----
+  "Nengo and the Neural Engineering Framework: Connecting Cognitive Theory to Neuroscience"
+  Chris Eliasmith (celiasmith@uwaterloo.ca)
+  Terrence C. Stewart (tcstewar@uwaterloo.ca)
+  Center for Theoretical Neuroscience, University of Waterloo
+  200 University Ave West, Waterloo, ON, N2L 3G1, Canada
+  -----
+  
+  
+_________________________
+2011-09-03 10:58 GMT-05:00
+
+http://compneuro.uwaterloo.ca/cnrglab/  <== director Chris Eliasmith, 1 author of _Neural Engineering: Computation, Representation and Dynamics in Neurobiological Systems_. MIT Press, 2003.
+
+http://compneuro.uwaterloo.ca/cnrglab/?q=system/files/lamprey.pdf <== Chris Eliasmith article from Computational Neuroscience Research Group.
+_________________________
+2011-09-02 00:36 GMT-05:00
+
+
+h1. MATH 801 - Topics in Applied Math
+					
+Status	  Units	  Grading   Session
+Enrolled  3.00    Graded    Regular
+	
+Class#	Section	Comp  Days & Times	    Room	        Instructor	   Start/End Date
+73388   001 Lecture   MoWe 4:00-5:15PM  VAN VLECK 901   Assadi,Amir H. 09/02/2011-12/15/2011
+
+_________________________
+Dear Math 801 audience,
+
+attached please find some information about the course.
+
+Please feel free to e-mail me, using the subject  >> MATH 801 << (or MATH 801  followed by whatever...)
+
+I look forward to seeing you in class on Wednesday....   Amir
+
+______________________
+Relevant Mathematics:
+
+calculus of functions of several variables, 
+vector functions, 
+linear algebra
+numerical solution of ordinary differential equations at standard undergraduate level. 
+Basic skills in probabilistic and statistical reasoning
+basic programming skills (e.g. MATLAB or any other high-level language) are assumed.
+
+Least Squares Approximation, 
+Singular Value Decomposition of matrices, 
+Fourier series, 
+basic probability (needed for Monte Carlo methods), 
+vector calculus needed for differential geometry of curves and surfaces, 
+Euler-type methods for solution of ordinary differential equations, 
+point set topology
+basic statistics (expected value, mean, variance, higher moments, probability distributions.)
+
+PROSPECTUS: MATH 801 (A. Assadi) Fall 2011
+
+Computational Mathematics Applied to Biology
+
+Course Structure and Prerequisites – 
+
+This course consists of lectures and
+computation lab sessions, training students in research-oriented reasoning and
+problem formulation in computational mathematics. There is no formal
+homework or tests. The grade will be based on individual term projects that will
+be decided within the first few weeks, and will serve as a practical framework to
+learn the mathematics and to gain computational skills. Projects vary according
+to the students’ interests and background, as the audience in such courses is
+from multiple disciplines and with quite heterogeneous backgrounds. The
+audience is expected to be familiar with calculus of functions of several
+variables, vector functions, linear algebra and numerical solution of ordinary
+differential equations at standard undergraduate level. Basic skills in
+probabilistic and statistical reasoning, basic programming skills (e.g. MATLAB
+or any other high-level language) are assumed. A sensible amount help will be
+provided in hands-on computation lab sessions that are optional, but highly
+recommended.
+
+Course Objectives and Topics - 
+
+A great deal of fundamental theoretical and
+numerical mathematical developments of the first part of 20th century occurred
+in the context of physics and engineering. Dynamical systems were particularly
+important for modeling physical phenomena and discovery of new principles
+that governed the behavior or structural description of physical systems.
+The 21st century mathematics and computation are in an analogous position to
+address challenging questions that arise for understanding the behavior or
+structural description of Complex Dynamical Systems (CDS). Biological
+organisms have underlying physical structures that comprise important and
+mystifying examples of CDS.
+
+This course offers a set of lectures and hands-on computation lab for training in
+analysis of data sets and modeling the underlying physical structures of this
+category of complex systems. The diversity and complicated array of living
+organisms, therefore, will limit us to a few selected cases. Based on my past and
+current research, I have opted to illustrate the mathematical techniques and
+computational strategies to modeling of biological intelligence (learning &
+memory), and even then, to a fraction of such phenomena, namely, vision and
+vision-related structures.
+
+The course will begin with examples of unsolved problems of the nervous
+systems, and in particular, the human brain. We will take a journey in
+formulating research problems that we try to answer by behavioral modeling
+(visual perception of form and movement.) Next, we review the biological
+apparatus for vision (the eye, the retina), and discuss a selection of outstanding
+research questions that are currently actively pursued. Going in the direction of
+finer structures, we explore the molecular-scale programs that underlie
+development of the retina, and time-permitted, parts of the cortical regions.
+These will provide examples of complex dynamical systems that require
+modeling in multiple scales and the accuracy of biological data (the resolution)
+varies depending on the structural details.
+
+The mathematical topics will be introduced in intuitive and informal
+frameworks. But the students are asked and guided to cover the details
+according to their level of preparation, yet learn how to think about them in
+computational terms and as they should be implemented using numerical data.
+The data sets are from currently active and ongoing research projects.
+Therefore, the opportunity of discovering new phenomena and design of new
+models are available, and hopefully, will be further developed into a research
+article.
+
+The topics include numerical linear algebra for handling very large and highdimensional
+data sets, rudiments of modeling using probabilistic reasoning,
+fundamental notions from dynamical systems and geometric/topological
+concepts that arise in study of CDS.
+
+Texts and Other Resources – 
+
+There is no formal textbook that could cover all
+the topics. Therefore, recommended readings will be provided from reserved
+materials, review articles and informal course notes.
+
+We will simplify the mathematical explanations as much as we can, and guide
+the advanced students to independent reading outside the materials covered in
+the lectures. On the other hand, we have constraints of limited time and
+resources to present the biological applications in full detail either. Therefore,
+the course is meant to be an introduction, hopefully an accessible collection of
+the topics on which it touches.
+
+Useful Reading Materials for Mathematics of September - 
+
+The mathematical models require us to cover some background materials. Nonetheless, the
+interested students could review or read treatment of Least Squares
+Approximation, Singular Value Decomposition of matrices, Fourier series, basic
+probability (needed for Monte Carlo methods), vector calculus needed for
+differential geometry of curves and surfaces, Euler-type methods for solution of
+ordinary differential equations, point set topology and basic statistics (expected
+value, mean, variance, higher moments, probability distributions.)
+
+Recommended Text- 
+
+Alexander Chorin & Ole Hald - _Stochastic Tools in Mathematics and Science_ (2009)
+Surveys and Tutorials in the Applied Mathematical Sciences, Springer.
